@@ -25,9 +25,9 @@ MEDIA_DIR = Path.joinpath(BASE_DIR, "media")
 SECRET_KEY = 'y7cg)0#p4tgv#r_57)&-e3)3k@!7z#n82^jchy#p$(=je50)bu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['evanpiercy.pythonanywhere.com']
 
 
 # Application definition
@@ -87,6 +87,13 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
+#PASSWORD_HASHERS = [
+#    'django.contrib.auth.hashers.Argon2PasswordHasher',
+#    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+#    'django.contrib.auth.hashers.BCryptPasswordHasher',
+#    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+#    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+#]
 
 AUTH_PASSWORD_VALIDATORS = [
     {
